@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify VT</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last listening</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span><img src="./img/avt-ms1.jpg" alt="">
+                    <h5>Chúng Ta Không Thuộc Về Nhau
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span><img src="./img/avt-ms2.jpg" alt="">
+                    <h5>Hãy Trao Cho Anh
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP, Snoop Dogg</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span><img src="./img/avt-ms3.jpg" alt="">
+                    <h5>Chúng Ta Của Hiện Tại
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span><img src="./img/avt-ms4.jpg" alt="">
+                    <h5>Chúng Ta Của Tương Lai
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span><img src="./img/avt-ms5.jpg" alt="">
+                    <h5>Chạy Ngay Đi
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP, Snoop Dogg</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="5"></i>
+                </li>
+                <li class="songItem">
+                    <span>06</span><img src="./img/avt-ms6.jpg" alt="">
+                    <h5>Nơi Này Có Anh
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="6"></i>
+                </li>
+                <li class="songItem">
+                    <span>07</span><img src="./img/avt-ms7.jpg" alt="">
+                    <h5>Em của ngày hôm qua
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="7"></i>
+                </li>
+                <li class="songItem">
+                    <span>08</span><img src="./img/avt-ms8.jpg" alt="">
+                    <h5>Âm Thầm Bên Em
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="8"></i>
+                </li>
+                <li class="songItem">
+                    <span>09</span><img src="./img/avt-ms9.jpg" alt="">
+                    <h5>Có Chắc Yêu Là Đây
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="9"></i>
+                </li>
+                <li class="songItem">
+                    <span>10</span><img src="./img/avt-ms10.jpg" alt="">
+                    <h5>Buông Đôi Tay Nhau Ra
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="10"></i>
+                </li>
+                <li class="songItem">
+                    <span>11</span><img src="./img/avt-ms11.jpg" alt="">
+                    <h5>Như Ngày Hôm Qua
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="11"></i>
+                </li>
+                <li class="songItem">
+                    <span>12</span><img src="./img/avt-ms12.jpg" alt="">
+                    <h5>Ấn Nút Nhớ... Thả Giấc Mơ
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="12"></i>
+                </li>
+                <li class="songItem">
+                    <span>13</span><img src="./img/avt-ms13.jpg" alt="">
+                    <h5>Cơn Mưa Ngang Qua
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="13"></i>
+                </li>
+                <li class="songItem">
+                    <span>14</span><img src="./img/avt-ms14.jpg" alt="">
+                    <h5>Nắng Ấm Xa Dần
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="14"></i>
+                </li>
+                <li class="songItem">
+                    <span>15</span><img src="./img/avt-ms15.jpg" alt="">
+                    <h5>Lạc Trôi
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="15"></i>
+                </li>
+                <li class="songItem">
+                    <span>16</span><img src="./img/avt-ms16.jpg" alt="">
+                    <h5>Chắc Ai Đó Sẽ Về
+                        <br>
+                        <div class="subtitle">Sơn Tùng M-TP</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="16"></i>
+                </li>
+                <li class="songItem">
+                    <span>17</span><img src="./img/avt-ms17.jpg" alt="">
+                    <h5>Luôn Yêu Đời
+                        <br>
+                        <div class="subtitle">Đen, Cheng</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="17"></i>
+                </li>
+                <li class="songItem">
+                    <span>18</span><img src="./img/avt-ms18.jpg" alt="">
+                    <h5>Ngày Khác Lạ
+                        <br>
+                        <div class="subtitle">Đen, Giang Phạm</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="18"></i>
+                </li>
+                <li class="songItem">
+                    <span>19</span><img src="./img/avt-ms19.jpg" alt="">
+                    <h5>Cho Mình Em
+                        <br>
+                        <div class="subtitle">Đen, Binz</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="19"></i>
+                </li>
+                <li class="songItem">
+                    <span>20</span><img src="./img/avt-ms20.jpg" alt="">
+                    <h5>Nấu Cho Các Em
+                        <br>
+                        <div class="subtitle">Đen, PiaLinh</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="20"></i>
+                </li>
+                <li class="songItem">
+                    <span>21</span><img src="./img/avt-ms21.jpg" alt="">
+                    <h5>Vì Yêu Cứ Đâm Đầu
+                        <br>
+                        <div class="subtitle">MIN, Đen, JustaTee</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="21"></i>
+                </li>
+                <li class="songItem">
+                    <span>22</span><img src="./img/avt-ms22.jpg" alt="">
+                    <h5>3 1 0 7 - 3
+                        <br>
+                        <div class="subtitle"> W/n, DuongG, Nâu</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="22"></i>
+                </li>
+                <li class="songItem">
+                    <span>23</span><img src="./img/avt-ms23.jpg" alt="">
+                    <h5>3 1 0 7 - 2
+                        <br>
+                        <div class="subtitle">W/n, DuongG, Nâu</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="23"></i>
+                </li>
+                <li class="songItem">
+                    <span>24</span><img src="./img/avt-ms24.jpg" alt="">
+                    <h5>3 1 0 7
+                        <br>
+                        <div class="subtitle">W/n, DuongG, Nâu</div>
+                    </h5>
+                    <i class="bi bi-play-circle-fill" id="24"></i>
+                </li>
+            </div>
+            <button id="btn-close-playlist">CLOSE</button>
+        </div>
+        <div class="song_side">
+            <nav class="navbar">
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>My library</li>
+                    <li>Radio</li>
+                    <li id="play-list">Play list</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search-heart"></i>
+                    <input type="text" placeholder="Search music" name="" id="">
+                </div>
+                <div class="user">
+                    <img src="./img/user-img.jpg" alt="">
+                </div>
+                <div class="menu" id="menu-btn">
+                    <i class="bi bi-list"></i>
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Sơn Tùng M-TP</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Adsbkjbv dsvsdv</p>
+                <div class="buttons">
+                    <button>play</button>
+                    <button>follow</button>
+                </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular song</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-circle" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-circle" id="pop_song_right"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="2"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="3"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="4"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="5"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="6"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="7"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="8"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="21"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="22"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="23"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                    <li class="songItems">
+                        <div class="img_play">
+                            <img src="./img/avt-ms3.jpg" alt="">
+                            <i class="bi bi-play-circle-fill" id="24"></i>
+                        </div>
+                        <h5>Chúng Ta Của Hiện Tại
+                            <br>
+                            <div class="subtitle">Sơn Tùng M-TP</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Artists</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-circle" id="artists_l"></i>
+                        <i class="bi bi-arrow-right-circle" id="artists_r"></i>
+                    </div>
+                </div>
+                <div class="items">
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="1">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="2">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="3">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="4">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="5">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="6">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="7">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="8">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="9">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="10">
+                    </li>
+                    <li class="avt-ar">
+                        <img src="./img/avt-artists.jpg" alt="" id="11">
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="master_play">
+            <div class="master_play_song">
+                <div class="wave" id="wave">
+                    <div class="wave1 "></div>
+                    <div class="wave1 "></div>
+                    <div class="wave1 "></div>
+                    <div class="wave1 "></div>
+                </div>
+                <img src="./img/music-cart.jpg" alt="" id="poster_master_play">
+                <h5 id="title">
+                    Không phải dạng vừa đâu
+                    <br>
+                    <div class="subtitle">Sơn Tùng M-TP</div>
+                </h5>
+            </div>
+            <div class="icons">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start-circle-fill"></i>
+                <i class="bi bi-play-circle-fill" id="masterPlay" ></i>
+                <i class="bi bi-skip-end-circle-fill"></i>
+                <i class="bi bi-cloud-arrow-down-fill" id="download_music"></i>
+            </div>
+            <div class="control-btn">
+                <span id="currentStart">0:00</span>
+                <div class="bar">
+                    <input type="range" id="seek" min="0" max="100">
+                    <div class="bar2" id="bar2"></div>
+                    <div class="dot"></div>
+                </div>
+                <span id="currentEnd">0:00</span>
+            </div>
+            <div class="vol">
+                <i class="bi bi-volume-up" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="app.js"></script>
+</body>
+
+</html>
