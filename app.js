@@ -1,5 +1,3 @@
-// music
-const music = new Audio('audio/audio01.mp3');
 const songs = [
     {
         id: "1",
@@ -182,7 +180,7 @@ Array.from(document.getElementsByClassName('avt-ar')).forEach((e, i) => {
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementById('wave');
 masterPlay.addEventListener('click', () => {
-    if (music.paused) {
+    if (music.paused||music.currentTime==0) {
         music.play();
         wave.classList.add('active1');
         masterPlay.classList.remove('bi-play-circle-fill');
@@ -228,4 +226,19 @@ artists_l.addEventListener('click', () => {
 })
 artists_r.addEventListener('click', () => {
     items.scrollLeft += 350;
+})
+
+
+const music = new Audio();
+let index = 1;
+let poster_master_play=document.getElementById('poster_master_play');
+Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
+    e.addEventListener('click',(el)=>{
+        index=el.target.id;
+        music.src= `audio/audio${index}.mp3`;
+        poster_master_play.src=`img/avt-ms${index}.jpg`;
+        music.play();
+        masterPlay.classList.remove('bi-play-circle-fill');
+        masterPlay.classList.add('bi-pause-circle-fill');
+    })
 })

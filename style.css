@@ -266,10 +266,11 @@ header .master_play .wave.active1 .wave1:nth-child(4) {
 }
 
 header .master_play img {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     background-color: #111727;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 header .master_play h5 {
@@ -805,7 +806,6 @@ header .master_play {
     align-items: center;
     justify-content: center;
 }
-
 @media (max-width:1500px) {
     html {
         font-size: 55%;
@@ -996,7 +996,10 @@ header .master_play {
     header .song_side::before {
         height: 200px;
     }
-
+    header .master_play img {
+        width: 47px;
+        height: 47px;
+    }
     header .song_side .content h1 {
         font-size: 17px;
     }
