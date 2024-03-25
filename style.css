@@ -144,10 +144,11 @@ header .menu_side .menu_song .songItem {
     margin-bottom: 10px;
     cursor: pointer;
     transition: .3s linear;
+    background-color: rgb(120, 120, 120, .1); ;
 }
 
 header .menu_side .menu_song .songItem:hover {
-    background: rgb(105, 105, 105);
+    background: rgb(62, 61, 61);
 }
 
 header .menu_side .menu_song .songItem:hover .bi {
@@ -807,10 +808,6 @@ header .master_play {
     justify-content: center;
 }
 @media (max-width:1500px) {
-    html {
-        font-size: 55%;
-    }
-
     header .menu_side .menu_song .songItem h5 {
         font-size: 10px;
         margin-left: 15px;
