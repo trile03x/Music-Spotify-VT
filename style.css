@@ -840,6 +840,9 @@ header .master_play {
     html {
         font-size: 55%;
     }
+    header{
+        margin: 5px;
+    }
 
     #menu-btn {
         display: block;
@@ -857,7 +860,9 @@ header .master_play {
     header .song_side .navbar ul li {
         margin-bottom: 20px;
     }
-
+    header .song_side .popular_song {
+        margin-top: 15px;
+    }
     header .song_side .navbar.active ul {
         display: block;
         position: absolute;
@@ -971,7 +976,11 @@ header .master_play {
         margin-top: 100px;
         bottom: 0;
     }
-    header .menu_side, .song_side {
+    header .song_side::before {
+        height: 250px;
+    }
+    header .menu_side,
+    .song_side {
         box-shadow: 0px 3px 2px var(--color-box-shadow);
     }
 
