@@ -638,6 +638,7 @@ header .song_side .popular_song .h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 14px;
 }
 
 header .song_side .popular_song .h4 .bi {
@@ -736,6 +737,7 @@ header .song_side .popular_artists .h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 14px;
 }
 
 header .song_side .popular_artists .h4 .bi {
@@ -861,7 +863,7 @@ header .master_play {
         margin-bottom: 20px;
     }
     header .song_side .popular_song {
-        margin-top: 15px;
+        margin-top: 2px;
     }
     header .song_side .navbar.active ul {
         display: block;
@@ -893,14 +895,16 @@ header .master_play {
     header .master_play {
         width: 100%;
     }
-
+    header .song_side .popular_artists {
+        margin-top: 2px;
+    }
     header .song_side .popular_song .h4 {
         padding-top: 20px;
-        font-size: 14px;
+        font-size: 10px;
     }
 
     header .song_side .popular_artists .h4 {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     header .song_side nav .search {
