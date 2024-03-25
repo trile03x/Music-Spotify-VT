@@ -844,7 +844,7 @@ header .master_play {
     }
 
     header {
-        margin: 5px;
+        width: 95%;
     }
 
     #menu-btn {
