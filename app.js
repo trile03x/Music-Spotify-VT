@@ -203,7 +203,7 @@ document.querySelector('#menu-btn').onclick = () => {
 }
 let playlist = document.querySelector('.menu_side');
 document.querySelector('#play-list').onclick = () => {
-    playlist.classList.toggle('active');
+    playlist.classList.add('active');
 }
 let exitplaylist = document.querySelector('.menu_side');
 document.querySelector('#btn-close-playlist').onclick = () => {

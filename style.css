@@ -906,7 +906,9 @@ header .master_play {
     header .song_side .popular_artists .h4 {
         font-size: 10px;
     }
-
+    header .menu_side .menu_song {
+        height: 300px;
+    }
     header .song_side nav .search {
         width: 100%;
         margin-right: 10%;
